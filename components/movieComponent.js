@@ -66,8 +66,8 @@ class movieComponent extends Component {
                 <Card className="flex-item" key={key}
                   image={poster}
                   href={'/movieDetails/' + item.id}
-                  meta={item.title}
-                  description={item.vote_average}
+                  header={item.title}
+                  meta={item.vote_average}
                 /> 
             )
           })
