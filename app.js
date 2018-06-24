@@ -27,6 +27,7 @@ class App extends React.Component {
         <Route
           render={props => (
             <div>
+              <Route location={location} path='/' exact component={movieComponent} />
               <Route location={location} path='/movies' exact component={movieComponent} />
               <Route location={location} path='/tvs' exact component={tvComponent} />
               <Route location={location} path='/movieDetails/:id' exact component={movieDetails} />
